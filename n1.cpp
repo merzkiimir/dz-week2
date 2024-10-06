@@ -16,7 +16,7 @@ int main(){
     int a, b;
     int summa = 0, kolvoa = 0;
     int summb = 0, kolvob = 0;
-    int necheta = 1, chetb = 1;
+    int necheta = 1, chetb = 0;
     std::cout << "Введите числа А и В\n";
     std::cin >> a >> b;
     for (int i = 1; i <= a; i++){
@@ -48,7 +48,7 @@ int main(){
 
     std::cout << "[1] сумма делителей: " << summa + summb << "\n";
     std::cout << "[2]. Произведение количества делителей A и B: " << kolvoa * kolvob << "\n";
-    std::cout << "[3]. Сумма произведения нечетных делителей числа А на произведение четных делителей числа В: " << necheta + chetb << "\n";
+    std::cout << "[3]. Сумма произведения нечетных делителей числа А и суммы четных делителей числа В: " << necheta + chetb << "\n";
     if (nod == 1){
         std::cout << "«Числа простые вместе».";
     } else {

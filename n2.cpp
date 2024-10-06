@@ -50,14 +50,14 @@ int main(){
                 do{
                     std::cout << n % 10 << " ";
                     n = n / 10;
-                }while (n % 10 > 0);
+                }while (n % 10 > 0 || n / 10 > 0);
                 std::cout << "\n";
                 break;
             case 3:
                 do{
                     kolvo++;
                     n = n / 10;
-                }while (n % 10 > 0);
+                }while (n % 10 > 0 || n / 10 > 0);
                 std::cout << kolvo << "\n";
                 break;
             case 4:
@@ -69,14 +69,14 @@ int main(){
                         min = n % 10;
                     }
                     n = n / 10;
-                }while (n % 10 > 0);
+                }while (n % 10 > 0 || n / 10 > 0);
                 std::cout << "max = " << max << ", min = " << min << "\n";
                 break;
             case 5:
                 do{
                     sum += n % 10;
                     n = n / 10;
-                }while (n % 10 > 0);
+                }while (n % 10 > 0 || n / 10 > 0);
                 std::cout << sum << "\n";
                 break;
             case 6:
@@ -85,14 +85,14 @@ int main(){
                         pr *= n % 10;
                     }
                     n = n / 10;
-                }while (n % 10 > 0);
+                }while (n % 10 > 0 || n / 10 > 0);
                 std::cout << pr << "\n";
                 break;
             case 7:
                 do{
                     str = str + std::to_string(n % 10);
                     n = n / 10;
-                }while (n % 10 > 0);
+                }while (n % 10 > 0 || n / 10 > 0);
                 std::cout << str << "\n";
                 break;
         }
